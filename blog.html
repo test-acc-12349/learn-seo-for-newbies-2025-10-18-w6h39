@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn SEO For Newbies Blog - Comprehensive SEO training articles and resources for beginners. Learn at your own pace with in-depth guides and tutorials.">
+    <meta name="keywords" content="SEO blog, SEO articles, beginner SEO tips, SEO guides, SEO tutorials, learn SEO">
+    <meta name="author" content="SEO Learning Platform">
+    <meta property="og:title" content="Learn SEO For Newbies - Blog">
+    <meta property="og:description" content="Comprehensive SEO training articles and resources for beginners. Learn at your own pace with in-depth guides and tutorials.">
+    <meta property="og:type" content="website">
+    <title>Blog - Learn SEO For Newbies - Beginner SEO Training</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .mobile-menu {
+            transition: max-height 0.3s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        .mobile-menu.active {
+            max-height: 500px;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 0.5rem;
+        }
+        
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="https://test-acc-12349.github.io/learn-seo-for-newbies-2025-10-18-w6h39" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">
+                        <i class="fas fa-graduation-cap mr-2"></i>SEO Academy
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="https://test-acc-12349.github.io/learn-seo-for-newbies-2025-10-18-w6h39" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">← Back</a>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden text-gray-700 hover:text-blue-600 transition-colors duration-300" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <nav class="mobile-menu md:hidden bg-gray-50 border-t border-gray-200">
+                <div class="flex flex-col space-y-4 px-4 py-4">
+                    <a href="https://test-acc-12349.github.io/learn-seo-for-newbies-2025-10-18-w6h39" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">← Back</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Blog Hero Section -->
+    <section class="relative w-full h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop'); opacity: 0.25;"></div>
+            <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight animate-fade-in-up">
+                Our Blog
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed animate-fade-in-up" style="animation-delay: 0.1s;">
+                Insights, tips, and strategies to master SEO and grow your online presence
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Purpose Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow-md p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">
+                    Welcome to Our SEO Blog
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                    Our blog is your go-to resource for comprehensive SEO knowledge, practical tips, and industry insights. Whether you're just starting your SEO journey or looking to deepen your expertise, you'll find valuable content tailored for beginners and intermediate learners.
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    We regularly publish in-depth guides, case studies, best practices, and tutorials covering everything from keyword research and on-page optimization to technical SEO and link building. Our team of SEO experts shares real-world strategies that deliver measurable results, helping you understand the fundamentals and advanced techniques needed to succeed in today's competitive digital landscape.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Latest Post
+                </h2>
+                <div class="h-1 w-20 bg-blue-600 rounded"></div>
+            </div>
+
+            <!-- Featured Post Card -->
+            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden mb-16">
+                <div class="p-8 md:p-12">
+                    <div class="flex items-center mb-4">
+                        <span class="inline-block bg-blue-100 text-blue-600 text-sm font-semibold px-4 py-2 rounded-full">Featured</span>
+                        <span class="ml-4 text-sm text-gray-500 flex items-center">
+                            <i class="fas fa-calendar mr-2"></i>
+                            October 18, 2025
+                        </span>
+                    </div>
+                    
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                        Getting Started with Our Platform
+                    </h3>
+
+                    <div class="mb-8 text-gray-600 leading-relaxed space-y-4">
+                        <h4 class="text-xl font-bold text-gray-900">The Complete Beginner's Guide to SEO: Everything You Need to Know</h4>
+                        
+                        <p>
+                            Master SEO fundamentals with this comprehensive guide covering the three pillars: technical SEO, on-page optimization, and off-page strategies. Learn why keyword research is essential, how to create ranking-worthy content, and the importance of building quality backlinks.
+                        </p>
+
+                        <p>
+                            Discover technical optimization techniques to improve site performance and crawlability. Track your progress using Google Analytics and Search Console. Avoid common mistakes like keyword stuffing and buying links. This beginner-friendly guide provides actionable strategies for improving your website's visibility, driving organic traffic, and achieving long-term online success through consistent, practical SEO implementation.
+                        </p>
+                    </div>
+
+                    <a href="https://test-acc-12349.github.io/learn-seo-for-newbies-2025-10-18-w6h39/blog/getting-started-with-our-platform.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                        Read Full Article
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Blog Posts Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+                    More Articles Coming Soon
+                </h2>
+                <div class="h-1 w-20 bg-blue-600 rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Placeholder Post 1 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 p-8 opacity-50">
+                    <div class="flex items-center mb-4">
+                        <span class="text-sm text-gray-400 flex items-center">
+                            <i class="fas fa-calendar mr-2"></i>
+                            Coming Soon
+                        </span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gray-400 mb-4">
+                        Keyword Research Essentials
+                    </h3>
+
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Learn the fundamentals of keyword research and discover how to find the perfect keywords for your website...
+                    </p>
+
+                    <button disabled class="inline-block bg-gray-300 text-gray-500 font-bold py-2 px-6 rounded-lg cursor-not-allowed">
+                        Coming Soon
+                    </button>
+                </div>
+
+                <!-- Placeholder Post 2 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 p-8 opacity-50">
+                    <div class="flex items-center mb-4">
+                        <span class="text-sm text-gray-400 flex items-center">
+                            <i class="fas fa-calendar mr-2"></i>
+                            Coming Soon
+                        </span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gray-400 mb-4">
+                        On-Page Optimization Guide
+                    </h3>
+
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Master the art of on-page SEO and learn how to optimize your content for search engines...
+                    </p>
+
+                    <button disabled class="inline-block bg-gray-300 text-gray-500 font-bold py-2 px-6 rounded-lg cursor-not-allowed">
+                        Coming Soon
+                    </button>
+                </div>
+
+                <!-- Placeholder Post 3 -->
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 p-8 opacity-50">
+                    <div class="flex items-center mb-4">
+                        <span class="text-sm text-gray-400 flex items-center">
+                            <i class="fas fa-calendar mr-2"></i>
+                            Coming Soon
+                        </span>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gray-400 mb-4">
+                        Building Quality Backlinks
+                    </h3>
+
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Discover effective strategies for building high-quality backlinks that boost your site's authority...
+                    </p>
+
+                    <button disabled class="inline-block bg-gray-300 text-gray-500 font-bold py-2 px-6 rounded-lg cursor-not-allowed">
+                        Coming Soon
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <p class="text-lg text-gray-600 mb-6">
+                    We're constantly creating new content to help you master SEO. Check back regularly for fresh articles and insights!
+                </p>
+                <a href="https://test-acc-12349.github.io/learn-seo-for-newbies-2025-10-18-w6h39" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                    Back to Main Course
+                    <i class="fas fa-arrow-left ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-blue-600 to-blue-800 relative overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop'); opacity: 0.1;"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">
+                Ready to Master SEO?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8 leading-relaxed max-w-2xl mx-auto">
+                Enroll in our comprehensive SEO course and start your journey to becoming an SEO expert. Learn from industry professionals with practical, hands-on training.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://seo.com" class="inline-block bg-white hover:bg-gray-100 text-blue-600 font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                    Get Started Now
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="https://test-acc-12349.github.io/learn-seo-for-newbies-2025-10-18-w6h39" class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl border-2 border-white">
+                    Learn More
+                    <i class="fas fa-question-circle ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">
+                        <i class="fas fa-graduation-cap mr-2"></i>SEO Academy
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Empowering beginners to master SEO and transform their digital presence with comprehensive, practical training.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Twitter">
+                            <i class="fab fa-twitter text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="YouTube">
+                            <i class="fab fa-youtube text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://test-acc-12349.github.io/learn-seo-for-newbies-2025-10-18-w6h39" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a>
+                        </li>
+                        <li>
+                            <a href="https://test-acc-12349.github.io/learn-seo-for-newbies-2025-10-18-w6h39#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a>
+                        </li>
+                        <li>
+                            <a href="https://test-acc-12349.github.io/learn-seo-for-newbies-2025-10-18-w6h39#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a>
+                        </li>
+                        <li>
+                            <a href="https://test-acc-12349.github.io/learn-seo-for-newbies-2025-10-18-w6h39#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a>
+                        </li>
+                        <li>
+                            <a href="https://test-acc-12349.github.io/learn-seo-for-newbies-2025-10-18-w6h39#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="https://test-acc-12349.github.io/learn-seo-for-newbies-2025-10-18-w6h39#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a>
+                        </li>
+                        <li>
+                            <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="https://test-acc-12349.github.io/learn-seo-for-newbies-2025-10-18-w6h39#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-blue-400 mr-3 mt-1 flex-shrink-0"></i>
+                            <a href="mailto:admin@seo.com" class="text-gray-400 hover:text-white transition-colors duration-300">admin@seo.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone text-blue-400 mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-400 mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="text-gray-400">Available Online 24/7</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        &copy; <span id="year">2024</span> SEO Academy. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Privacy Policy</a>
+                        <a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Terms of Service</a>
+                        <a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+        
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    const offsetTop = target.offsetTop - 80; // Account for fixed header
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
